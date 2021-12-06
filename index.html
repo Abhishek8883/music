@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title> 
+       <!-- --------Favicon------------- -->
+       <link rel="shortcut icon" type="image/jpg" href="Images/music-logo.png"/>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <!-- linked css file -->
+    <link rel="stylesheet" type="text/css" href="home-style.css">
+
+   <!-- ------linked resposnive css file--- -->
+   <!-- ----Desktop first approach was used------ -->
+   <link rel="stylesheet" type="text/css" href="page1-responsive.css">
+
+    <!-- for using font awesome  -->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+
+ <!-- ------------------------HEADER NAVIGATION BAR------------------------------------------ -->
+
+    <nav class="navigation-bar">
+        <!------- this div contains the icon and heading of the page ----->
+        <div class="title-combo">
+            <div class="website-logo">
+                <img src="https://cdn0.iconfinder.com/data/icons/internet-2020/1080/Applemusicandroid-512.png">
+            </div>
+            <div class="website-name">
+                <h1>
+                    Music Beat 
+                </h1>
+                <h4>
+                    Music Studio
+                </h4>
+            </div>
+        </div>
+
+        <!------------ Favourites ---- ---->
+        <div class="favs">
+            <h4>
+                Favourites
+            </h4>
+        </div>
+
+        <!-- --------Search bar ------------->
+        <div class="search-bar">
+            <div id="magnify-icon">
+                <!-- magnifying glass- search icon -->
+                <i class="fas fa-search search-ico"></i>
+            </div >
+            <input type="text" name="search" placeholder="Search....">
+            <div id="mic-icon">
+                <!-- mic icon -->
+                <i class="fas fa-microphone mic-ico"></i>
+            </div>
+        </div>
+
+        <!---------------Notification bell ---------->
+        <div class="notification-bell">
+            <img src="Images/bell_icon.svg">
+        </div>
+
+        <!--------- Profile picture ----------------->
+        <div class="profile-picture">   
+            <img src="https://i.ibb.co/GtwXqrw/resume-img.jpg">
+        </div> 
+    </nav>
+
+
+<!-- -------------------------------MAIN--------------------------------------------------------------- -->
+
+<main>
+	
+	<!-- ---------------------------Left aside section------------------------ -->
+	 <aside class="aside section-1">
+
+	 <!-- -------For cards carousel----- -->
+	 <div class="outer-carousel">
+                <div class="carousel">
+                    <!-- these are the 3 images in the carousel -->
+                   <!-- <img src="https://www.wallpapertip.com/wmimgs/100-1007497_illuminati-wallpaper-by-ziv97-d5zw7hk-png-291019-cool.png"> -->
+                   <img src="Images/Carousel/1.png">
+                    <!-- <img src="https://www.lucidsamples.com/blog/wp-content/uploads/2016/02/5.jpg"> -->
+                    <img src="Images/Carousel/2.jpg">
+
+                   <!-- <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHw%3D&w=1000&q=80"> -->
+                   <img src="Images/Carousel/3.jpg">
+
+                </div>
+            </div>
+	</aside>
+
+	<!-- --------------------------------LEFT ASIDE SECTIONS ENDS-------------------------------------------------- -->
+
+	<!-- --------------------------------------RIGHT ASIDE SECTION ----------------------------------------------------- -->
+
+        <!-- ----On reducing width og page this section will collapse and more button will be shown 
+                to open this section-->
+
+         <!--- Label for that more button -------->
+        <label for="more"><i class="fas fa-chevron-left"></i> Queue</label>
+
+        <!---- Check box , this will always be hidden ----->
+        <!-- check the stylesheet_main.css when the label is clicked, this checkbox will be checked 
+             this will show the aside section 2 on lower resolutions of web page ---->
+        <input type="checkbox" id="more">
+
+	 <aside class="aside section-2">
+	 	 <!-- Heading-- -->
+            <div class="heading">
+                <h1>Playlist</h1>
+                <h4>
+                    <a href="#queue-option-box">Queue <i class="fas fa-chevron-down"></i></a>
+                </h4>
+            </div>
+		 <!--------- Queue dropdown options------------>
+            <div class="queue-options" id="queue-option-box">
+                <p><a href style=" color:black;  font-weight:bolder;">Playlists</a></p>
+                <hr>
+                <p><a href style="color:black;  font-weight:bolder;">Favourite songs</a></p>
+                <hr>
+                <p><a href="#" style="color:black; color:red; font-weight:bolder;">Close</a></p>
+            </div>
+
+      <!-- ----------------PLAYLIST CONTENT-------------------------- -->
+
+       <div class="playlist-content">
+
+        </div>
+
+	</aside>
+
+</main>
+<!-- --------------------------------------------MAIN ENDS-------------------------------------------------- -->
+
+<!-- ----------------------------------------------------FOOTER------------------------------------------------>
+
+
+<!-- ------------FOR THIS SECTION TO DISPLAY ON WEB CLICK ON THE PLAY BUTTON IN LATEST RELEASE SECTION------------- -->
+
+
+<!-- -------- It shows the song playing------------- -->
+
+
+<footer class="bottom" id="bottom-click">
+
+	<div class="active-song-description">
+            <!-- -Song image- -->
+            <div id="song-image">
+              <img id="songImage" src="https://www.lololyrics.com/img/cover/39824.jpeg">
+            </div>
+
+            <!--- song name and singer --->
+            <div class="song-desc">
+                <div id="playingSongName">
+                    bad_habits
+                </div>
+                <div id="singerName" >
+                    Ed Sheeran
+                </div>
+                <!-- Heart icon and Ban icon -->
+            </div>
+            <div class="heart-and-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span> &nbsp</span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+
+   <!-- -------Player Controls--------- -->
+
+    <div class="player">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div id="playbtn">
+                    <i class="ri-play-line"></i>
+                </div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+
+            <!-- --Slider ----->
+            <div id="slider">
+             <!--- Current time -->
+                <div class="time">
+                    0:00
+                </div>
+
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+
+                <!-- Duration -->
+                <div class="time" >
+                   <span id="finalDuration"> 5:10</span>
+                </div>
+            </div>
+
+        </div>
+
+ <!--- Other icons including the volume slider------>
+        <div class="extras">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+
+
+</footer>
+
+
+<!-- alll audios  -->
+<audio  src="./songs/bad_habits.mp3"></audio>
+<audio  src="./songs/beautiful_people.mp3"></audio>
+<audio  src="./songs/BurjKhalifa.mp3"></audio>
+<audio  src="./songs/Care Ni Karda.mp3"></audio>
+<audio  src="./songs/ilomilo.mp3"></audio>
+<audio  src="./songs/Mirchi Lagi Toh.mp3"></audio>
+<audio  src="./songs/shape_of_you.mp3"></audio>
+
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
